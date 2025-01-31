@@ -62,6 +62,7 @@ lvim.keys.normal_mode["<C-n>"] = ":NvimTreeToggle<CR>"  -- Открыть/зак
 lvim.keys.normal_mode["<Tab>"] = ":tabnext<CR>"
 lvim.keys.normal_mode["<S-Tab>"] = ":tabprevious<CR>"
 
+vim.cmd("autocmd BufRead,BufNewFile *.html setlocal syntax=html")
 
 
 -- local cmp = require'cmp'
