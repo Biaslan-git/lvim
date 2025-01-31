@@ -7,7 +7,7 @@
 
 lvim.plugins = {
     { "Pocco81/auto-save.nvim" },
-    {"preservim/nerdtree"},
+    -- {"preservim/nerdtree"},
     {"ryanoasis/vim-devicons"},  -- Для иконок файлов
     {
       "aca/emmet-ls",
@@ -56,9 +56,8 @@ lvim.plugins = {
 lvim.keys.insert_mode["jk"] = "<esc>"
 lvim.keys.insert_mode["<C-.>"] = "<esc>>>llli"
 lvim.keys.insert_mode["<C-,>"] = "<esc><<i"
--- NERDTree
-lvim.keys.normal_mode["<C-n>"] = ":NERDTreeToggle<CR>"  -- Открыть/закрыть NERDTree
-lvim.keys.normal_mode["<C-f>"] = ":NERDTreeFind<CR>"    -- Найти текущий файл в NERDTree
+-- NvimTree
+lvim.keys.normal_mode["<C-n>"] = ":NvimTreeToggle<CR>"  -- Открыть/закрыть NERDTree
 -- Переключение между вкладками
 lvim.keys.normal_mode["<Tab>"] = ":tabnext<CR>"
 lvim.keys.normal_mode["<S-Tab>"] = ":tabprevious<CR>"
